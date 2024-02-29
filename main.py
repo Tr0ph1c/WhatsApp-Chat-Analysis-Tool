@@ -52,10 +52,10 @@ def calculate():
     totalmsgs = msgs[0] + msgs[1]
 
     stats = [
-        f'Chat consists of {totalmsgs} messages',
+        f'Total number of messages sent: {totalmsgs}.',
         f'{f"{un1}:":<20} {msgs[0]:>10} msgs |||  {int(100*(msgs[0]/totalmsgs))}%',
         f'{f"{un2}:":<20} {msgs[1]:>10} msgs |||  {int(100*(msgs[1]/totalmsgs))}%',
-        f'Found {msgs[2]} number of exceptions.'
+        f'Number of exceptions: {msgs[2]}'
     ]
 
     print('\n'+'\n'.join(stats)+'\n')
